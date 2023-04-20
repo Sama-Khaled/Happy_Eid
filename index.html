@@ -5,7 +5,150 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="main.css">
-    <title>Document</title>
+    <title>Happy Eid</title>
+    <Style>
+        @import url('https://fonts.googleapis.com/css2?family=Lobster+Two:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic&display=swap');
+body {
+    margin: 0;
+    background-color: #ea2429;
+    border: 5px solid #000;
+    font-family: 'Lobster Two', cursive;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    background-color: #ea2429;
+}
+header img {
+    width: 189px;
+   
+}
+
+section {
+    display: flex;
+    justify-content: flex-end;
+}
+
+section > img {
+    height: 450px;
+    margin: 0 AUTO;
+}
+
+
+.flip-card {
+  background-color: transparent;
+  width: 300px;
+  height: 300px;
+  perspective: 1000px;
+  border-radius: 50%;
+  position: absolute;
+  top: 46%;
+  left: 26%;
+  width: 150px;
+  height: 150px;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  border-radius: 50%
+}
+
+.flip-card:focus {
+    outline: 0;
+}
+
+.flip-card:hover .flip-card-inner,
+.flip-card:focus .flip-card-inner{
+  transform: rotateY(180deg);
+}
+
+.flip-card-front,
+.flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%
+}
+
+.flip-card-front {
+  background:  linear-gradient(to right, #ea2429, #ea2429);
+  color: black;
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.flip-card-back {
+  background: linear-gradient(to right, #ea2429, #ea2429);
+  color: white;
+  transform: rotateY(180deg);
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+h3 {
+  font-size: 20px;
+ 
+  font-weight: bold;
+  color: #fff;
+}
+
+
+
+.two .flip-card {
+    background-color: transparent;
+    width: 300px;
+    height: 300px;
+    perspective: 1000px;
+    border-radius: 50%;
+    position: absolute;
+    top: 111%;
+    left: 25%;
+    width: 150px;
+    height: 150px;
+    font-family: 'IBM Plex Sans Arabic', sans-serif;
+  }
+
+
+  .three .flip-card {
+    background-color: transparent;
+    width: 300px;
+    height: 300px;
+    perspective: 1000px;
+    border-radius: 50%;
+    position: absolute;
+    top: 180%;
+    left: 8%;
+    width: 150px;
+    height: 150px;
+  }
+
+  .four .flip-card {
+    background-color: transparent;
+    width: 300px;
+    height: 300px;
+    perspective: 1000px;
+    border-radius: 50%;
+    position: absolute;
+    top: 251%;
+    left: 9%;
+    width: 150px;
+    height: 150px;
+  }
+  
+
+        </style>
 </head>
 <body>
     <header>
